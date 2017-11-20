@@ -12,8 +12,8 @@ git clone https://github.com/sindresorhus/pure.git
 #install pure theme
 themeLoc="/usr/local/share/zsh/site-functions"
 wd=$(pwd)
-ln -s $wd/pure/pure.zsh $themeLoc/prompt_pure_setup
-ln -s $wd/pure/async.zsh $themeLoc/async
+ln -sfF $wd/pure/pure.zsh $themeLoc/prompt_pure_setup
+ln -sfF $wd/pure/async.zsh $themeLoc/async
 
 #write zshrc
 printf "# .zshrc\nautoload -U promptinit; promptinit\nprompt pure" > ~/.zshrc
