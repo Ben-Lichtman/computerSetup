@@ -17,3 +17,6 @@ sudo ln -sfF $wd/pure/async.zsh $themeLoc/async
 
 #write zshrc
 printf "# .zshrc\nautoload -U promptinit; promptinit\nprompt pure" > ~/.zshrc
+
+#write zprofile
+printf "# Remove \"last login\" message\nprintf \"printf \\\\033c\"" > ~/.zprofile
