@@ -13,6 +13,6 @@ else
 	sudo git clone https://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh
 fi
 
-ln -s zshrc ~/.zshrc
-ln -s hushlogin ~/.hushlogin
-ln -s config ~/.config
+ln -sf $origin/zshrc ~/.zshrc
+ln -sf $origin/zprofile ~/.zprofile
+ln -sf $origin/config ~/.config
