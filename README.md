@@ -90,6 +90,7 @@ chsh -s shellPath user
 * w3m
 * wget
 * gpm
+* neofetch
 
 ## Git repo folder
 
