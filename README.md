@@ -1,4 +1,4 @@
-#Ben's guide to a new arch installation
+# Ben's guide to a new arch installation
 
 ## Essentials
 
@@ -27,7 +27,7 @@ pacman -Syu
 
 Set timezone
 ```
-ln -sf /usr/share/zoneinfo/Region/City /etc/localtim
+ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 ```
 
