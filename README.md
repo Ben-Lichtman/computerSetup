@@ -52,7 +52,7 @@ nano /etc/hosts
 
 Install important packages
 ```
-pacman -S sudo git tree tmux
+pacman -S sudo base-devel git tree tmux
 ```
 
 Configure sudo
@@ -89,3 +89,10 @@ chsh -s shellPath user
 * transmission-cli
 * w3m
 * wget
+* gpm
+
+## Git repo folder
+
+```
+sudo mkdir /var/git
+```
