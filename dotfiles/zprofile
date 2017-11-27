@@ -1,2 +1,3 @@
 # Remove "last login" message
 printf "printf \033c"%
+neofetch
