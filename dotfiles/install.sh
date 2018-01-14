@@ -23,3 +23,4 @@ fi
 ln -sf $origin/zshrc ~/.zshrc
 ln -sf $origin/zprofile ~/.zprofile
 ln -sf $origin/config ~/.config
+ln -sf $origin/xinitrc ~/.xinitrc

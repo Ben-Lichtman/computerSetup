@@ -1,5 +1,12 @@
 # Ben's guide to a new arch installation
 
+## Pre-Boot
+
+Install boot packages and hardware tools
+```
+pacman -S grub-bios linux-headers linux-lts linux-lts-headers wpa_supplicant wireless_tools
+```
+
 ## Essentials
 
 Login and change the user and root passwords
@@ -31,11 +38,11 @@ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 ```
 
-Set locale
+Set locale - remove comment on the one you want
 ```
+nano /etc/locale.gen
 locale-gen
-cat /etc/locale.gen
-nano /etc/locale.conf
+less /etc/locale.conf #to check
 ```
 
 Set hostname
@@ -52,7 +59,7 @@ nano /etc/hosts
 
 Install important packages
 ```
-pacman -S sudo base-devel git tree tmux
+pacman -S sudo base-devel binutils cronie git ntp tree tmux
 ```
 
 Configure sudo
@@ -81,8 +88,10 @@ chsh -s shellPath user
 ## Other packages
 
 * clang
+* cronie
 * fail2ban
 * gcc
+* ntp
 * python
 * ranger
 * ripgrep
@@ -90,7 +99,6 @@ chsh -s shellPath user
 * w3m
 * wget
 * gpm
-* neofetch
 
 ## Git repo folder
 
